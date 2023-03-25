@@ -1,8 +1,3 @@
-title: "Terraform Associate Docu"
-description: "Documentation for the Terraform Associate certification"
-baseurl: ""
-url: ""
-
 markdown: 
   input: GFM
   output: HTML
@@ -12,62 +7,79 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-sitemap
 
-collections:
-  commands:
-    output: true
-    permalink: /commands/:path/
-  language:
-    output: true
-    permalink: /language/:path/
-
 defaults:
   - scope:
       path: ""
-      type: "commands"
+      type: "pages"
     values:
-      layout: "command"
+      layout: "default"
   - scope:
       path: ""
-      type: "language"
+      type: "directories"
     values:
-      layout: "language"
-      
-exclude: 
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - node_modules
+      layout: "directory"
 
-# Hamburger Dashboard with all .md files ordered and clickable
-header_pages:
-  - {title: "Overview", url: "/overview/"}
-  - {title: "Commands", url: "/commands/"}
-  - {title: "Language", url: "/language/"}
-
-commands:
-  output: true
-
+# Home page
+# This is the main page of your site and should be saved as index.md or index.html in the root directory
+# You can customize this page by editing index.md
+# This page will link to the various .md files in your tree
+# Replace `my-site` with the name of your site
+# Replace `My Site` with the title of your site
+# Replace `commands` with the name of the first directory in your tree
+# Replace `Commands` with the title of the first directory in your tree
+# Repeat the `nav:` block for each directory and .md file in your tree
 defaults:
   - scope:
       path: ""
-      type: "commands"
+      type: "pages"
     values:
-      layout: "command"
-
-language:
-  output: true
-
-defaults:
+      layout: "home"
+      title: "My Site"
+      nav:
+        - text: "Commands"
+          link: "/commands/"
+        - text: "Files"
+          link: "/files/"
+        - text: "Language"
+          link: "/language/"
+        - text: "Overview"
+          link: "/overview/"
+        - text: "Registry"
+          link: "/registry/"
+        - text: "Terraform Cloud"
+          link: "/terraform-cloud/"
+        - text: "Terraform Enterprise"
+          link: "/terraform-enterprise/"
   - scope:
-      path: ""
-      type: "language"
+      path: "commands"
+      type: "directories"
     values:
-      layout: "language"
-      
-language_submenu:
-  - {title: "Backend", url: "/language/backend/"}
-  - {title: "Functions", url: "/language/functions/"}
+      layout: "directory"
+  - scope:
+      path: "language"
+      type: "directories"
+    values:
+      layout: "directory"
 
-collections_dir:
-  - commands
-  - language
+# Navigation links
+# These are the links that appear at the top of your site
+# Replace `my-site` with the name of your site
+# Replace `My Site` with the title of your site
+# Replace `commands` with the name of the first directory in your tree
+# Replace `Commands` with the title of the first directory in your tree
+# Repeat the `nav:` block for each directory and .md file in your tree
+nav:
+  - text: "Commands"
+    link: "/commands/"
+  - text: "Files"
+    link: "/files/"
+  - text: "Language"
+    link: "/language/"
+  - text: "Overview"
+    link: "/overview/"
+  - text: "Registry"
+    link: "/registry/"
+  - text: "Terraform Cloud"
+    link: "/terraform-cloud/"
+  - text: "Terraform Enterprise"
+    link: "/terraform-enterprise/"
