@@ -1,4 +1,73 @@
+title: "Terraform Associate Docu"
+description: "Documentation for the Terraform Associate certification"
+baseurl: ""
+url: ""
+
 markdown: 
   input: GFM
   output: HTML
 
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-sitemap
+
+collections:
+  commands:
+    output: true
+    permalink: /commands/:path/
+  language:
+    output: true
+    permalink: /language/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "commands"
+    values:
+      layout: "command"
+  - scope:
+      path: ""
+      type: "language"
+    values:
+      layout: "language"
+      
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+
+# Hamburger Dashboard with all .md files ordered and clickable
+header_pages:
+  - {title: "Overview", url: "/overview/"}
+  - {title: "Commands", url: "/commands/"}
+  - {title: "Language", url: "/language/"}
+
+commands:
+  output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "commands"
+    values:
+      layout: "command"
+
+language:
+  output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "language"
+    values:
+      layout: "language"
+      
+language_submenu:
+  - {title: "Backend", url: "/language/backend/"}
+  - {title: "Functions", url: "/language/functions/"}
+
+collections_dir:
+  - commands
+  - language
