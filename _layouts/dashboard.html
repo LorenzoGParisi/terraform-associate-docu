@@ -1,18 +1,17 @@
 ---
 layout: default
+title: Terraform Commands
 ---
 
-<h1>Dashboard</h1>
+<h1>Terraform Commands</h1>
 
-{% assign directories = site.pages | map: 'dir' | uniq | sort %}
-
-{% for directory in directories %}
-  <h2>{{ directory }}</h2>
-  <ul>
-    {% for page in site.pages %}
-      {% if page.dir == directory %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+{% for category in site.collections %}
+  {% if category.label == "terraform" %}
+    <h2>{{ category.title | capitalize }}</h2>
+    <ul>
+      {% for doc in category.docs %}
+        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
