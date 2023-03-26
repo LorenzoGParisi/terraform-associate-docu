@@ -1,5 +1,0 @@
-markdown: kramdown
-kramdown:
-  input: GFM
-  output: HTML
-permalink: /index.html
