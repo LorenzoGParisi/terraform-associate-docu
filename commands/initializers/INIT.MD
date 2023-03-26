@@ -1,3 +1,4 @@
+[Back](../commands.md) [Home](../../index.md)
 # TERRAFORM INIT
 
 **What does it do?**
@@ -51,5 +52,3 @@ To initialize a directory for the first time and when adding or removing modules
 - init doesn't creates .terraform.lock.hcl and .terraform/provider/... when there isn't at least a provider or a real provider resource blocks.
 - init doesn't creates .terraform/modules/modules.json if there isn't a real module source in the configuration.
 - If a provider block isn't declared but his resource is, .terraform/providers/... and terraform.lock.hcl is created anyway.
-
-[Link to index.md](../../index.md)
