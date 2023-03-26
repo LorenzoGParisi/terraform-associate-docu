@@ -1,19 +1,74 @@
----
-layout: default
-title: Dashboard
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Terraform Commands Dashboard</title>
+</head>
+<body>
+  <h1>Terraform Commands Dashboard</h1>
 
-<div class="container">
-  <div class="row">
-    {% for category in site.categories %}
-      <div class="col-md-4">
-        <h2>{{ category | first }}</h2>
-        <ul>
-          {% for post in category.last %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+  <h2>Authenticators</h2>
+  <ul>
+    <li><a href="./commands/authenticators/LOGIN.md">Login</a></li>
+    <li><a href="./commands/authenticators/LOGOUT.md">Logout</a></li>
+  </ul>
+
+  <h2>Importer</h2>
+  <ul>
+    <li><a href="./commands/importer/IMPORT.md">Import</a></li>
+  </ul>
+
+  <h2>Initializers</h2>
+  <ul>
+    <li><a href="./commands/initializers/GET.md">Get</a></li>
+    <li><a href="./commands/initializers/INIT.md">Init</a></li>
+  </ul>
+
+  <h2>Inspectors</h2>
+  <ul>
+    <li><a href="./commands/inspectors/GRAPH.md">Graph</a></li>
+    <li><a href="./commands/inspectors/OUTPUT.md">Output</a></li>
+    <li><a href="./commands/inspectors/SHOW.md">Show</a></li>
+  </ul>
+
+  <h2>Pluginers</h2>
+  <ul>
+    <li><a href="./commands/pluginers/PROVIDERS_LOCK.md">Providers Lock</a></li>
+    <li><a href="./commands/pluginers/PROVIDERS.md">Providers</a></li>
+    <li><a href="./commands/pluginers/PROVIDERS_MIRROR.md">Providers Mirror</a></li>
+    <li><a href="./commands/pluginers/PROVIDERS_SCHEMA.md">Providers Schema</a></li>
+    <li><a href="./commands/pluginers/VERSION.md">Version</a></li>
+  </ul>
+
+  <h2>Provisioners</h2>
+  <ul>
+    <li><a href="./commands/provisioners/APPLY.md">Apply</a></li>
+    <li><a href="./commands/provisioners/DESTROY.md">Destroy</a></li>
+    <li><a href="./commands/provisioners/PLAN.md">Plan</a></li>
+  </ul>
+
+  <h2>State Manipulators</h2>
+  <ul>
+    <li><h3>Disaster Recovers</h3>
+      <ul>
+        <li><a href="./commands/state-manipulators/disaster-recovers/FORCE_UNLOCK.md">Force Unlock</a></li>
+        <li><a href="./commands/state-manipulators/disaster-recovers/STATE_PULL.md">State Pull</a></li>
+        <li><a href="./commands/state-manipulators/disaster-recovers/STATE_PUSH.md">State Push</a></li>
+      </ul>
+    </li>
+    <li><h3>Inspectors</h3>
+      <ul>
+        <li><a href="./commands/state-manipulators/inspectors/REFRESH.md">Refresh</a></li>
+        <li><a href="./commands/state-manipulators/inspectors/STATE_SHOW.md">State Show</a></li>
+        <li><a href="./commands/state-manipulators/inspectors/STATE_LIST.md">State List</a></li>
+      </ul>
+    </ul>
+
+  <h2>Workspace Manipulators</h2>
+  <ul>
+    <li><a href="./commands/workspace-manipulators/NEW.md">New</a></li>
+    <li><a href="./commands/workspace-manipulators/SELECT.md">Select</a></li>
+    <li><a href="./commands/workspace-manipulators/SHOW.md">Show</a></li>
+  </ul>
+</body>
+</html>
