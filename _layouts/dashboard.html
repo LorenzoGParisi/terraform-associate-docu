@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>Dashboard</h1>
+
+{% assign directories = site.pages | map: 'dir' | uniq | sort %}
+
+{% for directory in directories %}
+  <h2>{{ directory }}</h2>
+  <ul>
+    {% for page in site.pages %}
+      {% if page.dir == directory %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endfor %}
