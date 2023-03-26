@@ -1,3 +1,4 @@
+[Home](../../index.md)/[Commands](../commands.md)
 # TERRAFORM APPLY
 
 **What does it do?**
