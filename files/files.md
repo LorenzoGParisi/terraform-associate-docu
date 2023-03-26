@@ -2,16 +2,16 @@
 
 ## .terraform.lock.hcl
 
-- [.TERRAFORM.LOCK.HCL.MD](./.TERRAFORM.LOCK.HCL.MD)
+- [.TERRAFORM.LOCK.HCL.html](./.TERRAFORM.LOCK.HCL.html)
 
 ## .terraform/
 
-- [.TERRAFORM.MD](./.TERRAFORM.MD)
+- [.TERRAFORM.html](./.TERRAFORM.html)
 
 ## .terraform.tfstate.lock.info
 
-- [.TERRAFORM.TFSTATE.LOCK.INFO.MD](./.TERRAFORM.TFSTATE.LOCK.INFO.MD)
+- [.TERRAFORM.TFSTATE.LOCK.INFO.html](./.TERRAFORM.TFSTATE.LOCK.INFO.html)
 
 ## .terraform.tfstate
 
-- [TERRAFORM.TFSTATE.MD](./TERRAFORM.TFSTATE.MD)
+- [TERRAFORM.TFSTATE.html](./TERRAFORM.TFSTATE.html)

@@ -1,1 +1,1 @@
-[Home](../../../index.md)/[Commands](../../commands.md)/[Commands](../disaster-recovers.md)
+[Home](../../../index.html)/[Commands](../../commands.html)/[Commands](../disaster-recovers.html)
