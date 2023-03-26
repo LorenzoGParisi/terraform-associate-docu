@@ -3,7 +3,7 @@ title: My Terraform Docs
 description: A collection of Terraform documentation
 
 # Theme settings
-theme: jekyll-theme-dinky
+theme: jekyll-theme-so-simple
 
 # Build settings
 markdown: kramdown
