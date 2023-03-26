@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Terraform Commands
+title: Dashboard
 ---
 
-<h1>Terraform Commands</h1>
-
-{% for category in site.collections %}
-  {% if category.label == "terraform" %}
-    <h2>{{ category.title | capitalize }}</h2>
-    <ul>
-      {% for doc in category.docs %}
-        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endfor %}
+<div class="container">
+  <div class="row">
+    {% for category in site.categories %}
+      <div class="col-md-4">
+        <h2>{{ category | first }}</h2>
+        <ul>
+          {% for post in category.last %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>
