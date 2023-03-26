@@ -1,0 +1,11 @@
+# Site settings
+title: My Terraform Docs
+description: A collection of Terraform documentation
+
+# Theme settings
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+input: GFM
+output: HTML
