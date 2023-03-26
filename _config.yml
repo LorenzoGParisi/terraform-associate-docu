@@ -1,41 +1,21 @@
 markdown: 
   input: GFM
   output: HTML
-title: Terraform Commands Documentation
-description: This is a documentation site for Terraform commands and functions.
-theme: jekyll-theme-cayman
-
+title: My Terraform Commands
+description: A dashboard for all Terraform command documentation
+plugins:
+  - jekyll-sitemap
+  - jekyll-github-metadata
+markdown: kramdown
+permalink: /:categories/:title/
 collections:
-  commands:
+  terraform:
     output: true
-    permalink: /commands/:path/
-    sort_by: path
-  language:
-    output: true
-    permalink: /language/:path/
-    sort_by: path
-
+    sort_by: title
 defaults:
   - scope:
       path: ""
-      type: "commands"
+      type: "terraform"
     values:
-      layout: "command"
-
-  - scope:
-      path: ""
-      type: "language"
-    values:
-      layout: "function"
-
-# Exclude some files from being built
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-
-# Navigation links
-header_pages:
-  - overview.md
-  - commands/
-  - language/
+      layout: "post"
+      categories: ["terraform"]
