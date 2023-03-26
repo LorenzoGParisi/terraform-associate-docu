@@ -1,4 +1,4 @@
-[Back](../commands.md) [Home](../../index.md)
+[Home](../../index.md)/[Commands](../commands.md)
 # TERRAFORM INIT
 
 **What does it do?**
