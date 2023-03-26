@@ -1,3 +1,97 @@
 markdown: 
   input: GFM
   output: HTML
+# Configuration file for GitHub Pages
+title: Terraform Documentation Dashboard
+
+# Define the directory structure
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "command"
+    values:
+      layout: "command"
+
+# Define the navigation menu
+nav:
+  - title: "Overview"
+    url: "/overview/"
+  - title: "Commands"
+    url: "/commands/"
+    children:
+      - title: "Authenticators"
+        url: "/commands/authenticators/"
+        children:
+          - title: "Login"
+            url: "/commands/authenticators/login/"
+          - title: "Logout"
+            url: "/commands/authenticators/logout/"
+      - title: "Importers"
+        url: "/commands/importers/"
+        children:
+          - title: "Import"
+            url: "/commands/importers/import/"
+      - title: "Initializers"
+        url: "/commands/initializers/"
+        children:
+          - title: "Get"
+            url: "/commands/initializers/get/"
+          - title: "Init"
+            url: "/commands/initializers/init/"
+      - title: "Inspectors"
+        url: "/commands/inspectors/"
+        children:
+          - title: "Graph"
+            url: "/commands/inspectors/graph/"
+          - title: "Output"
+            url: "/commands/inspectors/output/"
+          - title: "Show"
+            url: "/commands/inspectors/show/"
+      - title: "Pluginers"
+        url: "/commands/pluginers/"
+        children:
+          - title: "Providers Lock"
+            url: "/commands/pluginers/providers-lock/"
+          - title: "Providers"
+            url: "/commands/pluginers/providers/"
+          - title: "Providers Mirror"
+            url: "/commands/pluginers/providers-mirror/"
+          - title: "Providers Schema"
+            url: "/commands/pluginers/providers-schema/"
+          - title: "Version"
+            url: "/commands/pluginers/version/"
+      - title: "Provisioners"
+        url: "/commands/provisioners/"
+        children:
+          - title: "Apply"
+            url: "/commands/provisioners/apply/"
+          - title: "Destroy"
+            url: "/commands/provisioners/destroy/"
+          - title: "Plan"
+            url: "/commands/provisioners/plan/"
+      - title: "State Manipulators"
+        url: "/commands/state-manipulators/"
+        children:
+          - title: "Disaster Recovers"
+            url: "/commands/state-manipulators/disaster-recovers/"
+            children:
+              - title: "Force Unlock"
+                url: "/commands/state-manipulators/disaster-recovers/force-unlock/"
+              - title: "State Pull"
+                url: "/commands/state-manipulators/disaster-recovers/state-pull/"
+              - title: "State Push"
+                url: "/commands/state-manipulators/disaster-recovers/state-push/"
+          - title: "Inspectors"
+            url: "/commands/state-manipulators/inspectors/"
+            children:
+              - title: "Refresh"
+                url: "/commands/state-manipulators/inspectors/refresh/"
+              - title: "State Show"
+                url: "/commands/state-manipulators/inspectors/state-show/"
+              - title: "State List"
+                url: "/commands/state-manipulators/inspectors/state-list/"
