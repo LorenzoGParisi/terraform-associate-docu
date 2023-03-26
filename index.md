@@ -2,19 +2,19 @@
 
 Welcome to the dashboard! Below you'll find links to various sections of the site.
 
-## Terraform Commands
+## Commands
 
 - [Commands](./commands/commands.html)
 
-## Terraform Files
+## Files
 
 - [Files](./files/files.html)
 
-## Terraform Language
+## Language
 
 - [Language](./language/language.html)
 
-## Terraform Registry
+## Registry
 
 - [Registry](./registry/registry.html)
 
