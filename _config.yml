@@ -28,9 +28,9 @@ nav:
         url: "/commands/authenticators/"
         children:
           - title: "Login"
-            url: "/commands/authenticators/LOGIN.html"
+            url: "/commands/authenticators/login"
           - title: "Logout"
-            url: "/commands/authenticators/LOGOUT.MD"
+            url: "/commands/authenticators/logout"
       - title: "Importers"
         url: "/commands/importers/"
         children:
